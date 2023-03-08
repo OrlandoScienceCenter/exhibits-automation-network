@@ -1,0 +1,32 @@
+<html>
+   <body>
+      <table border = 1>
+          <tr>
+              <td><form action = "http://192.168.1.254/exhibitspanel/addnewexhibit" method = "POST">
+                  Exhibit name: <br>
+                  <input type="text" name="textbox_name"><br><br>
+
+                  Floor number:<br>
+                  <input type="text" name="textbox_floor"><br><br>
+
+                  Location (room):  <br>
+                  <input type="text" name="textbox_room"><br> <br>
+
+                  Exhibit type:  <br>
+                  <input type="text" name="textbox_type"><br> <br>
+
+                  Full MQTT topic:<br>
+                  <input type="text" name="mqtt_topic"><br> <br>
+              </td>     
+          </tr>
+          <tr>
+            <td><br>
+               &nbsp;<input type = "submit" name = "button_addexhibit" value = "Save/Add Exhibit" />
+            </form>
+            <form action = "http://192.168.1.254/exhibitspanel" method = "GET">       
+                  &nbsp;<input type = "submit" name = "button_addcancel" value = "Cancel" />&nbsp;<br><br>
+            </form></td>
+          </tr>
+      </table>
+   </body>
+</html>
